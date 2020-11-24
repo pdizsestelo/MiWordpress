@@ -13,12 +13,17 @@
 
 
 <?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
-
+    <center>
+    <div style="width:33%">
     <h3><?php the_title(); ?></h3>
     <?php the_post_thumbnail('thumbnail');?>
     <?php the_content(); ?>
     <?php wp_link_pages(); ?>
     <?php edit_post_link(); ?>
+        <hr>
+    </center>
+    </div>
+
 
 <?php endwhile; ?>
 
